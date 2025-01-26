@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="382.464" height="245.887" viewBox="0 0 382.464 245.887">
+  <defs>
+    <linearGradient id="linear-gradient" y1=".998" x2=".997" y2=".998" gradientUnits="objectBoundingBox">
+      <stop offset=".004" stop-color="#fff"/>
+      <stop offset=".686" stop-color="#edf1f9"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-1030 -591)">
+    <g id="Car_Back" data-name="Car Back" transform="translate(1030 591)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="380.464" height="243.887" rx="24" transform="translate(1 1)" stroke="#b5bbc9" stroke-width="2" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="340" height="7" rx="3.5" transform="translate(26.461 35)" fill="#272727" opacity=".9"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="340" height="7" rx="3.5" transform="translate(26.461 138)" fill="#272727" opacity=".9"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="340" height="7" rx="3.5" transform="translate(26.461 55)" fill="#272727" opacity=".9"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="340" height="7" rx="3.5" transform="translate(26.461 75)" fill="#272727" opacity=".9"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="340" height="7" rx="3.5" transform="translate(26.461 96)" fill="#272727" opacity=".9"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="340" height="7" rx="3.5" transform="translate(26.461 117)" fill="#272727" opacity=".9"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+export const getUserCreditsById = (id: string) => `/users/${id}/credits`;
+export const getUserById = (id: number) => `/users/${id}`;
+export const updateFCMToken = (id: number) => `/users/${id}/firebase-token`;
+export const updateUserData = (id: number) => `/users/${id}/meta`;
+export const verifyUserNationalId = (id: number) => `/users/${id}/nationalId`;
+export const getUserContractsById = (id: string) => `/users/${id}/contracts`;
+export const getUserActiveContracts = () => `/contracts/user-active/get`;
+export const getContractDetailsById = (id: number) => `/contracts/${id}`;
+export const sendContactUs = () => '/general/contact-form';
+export const updateUserInfo = (id: number) => `/users/${id}`;
+export const deleteUserNationalId = (id: number) => `/users/${id}/nationalId`;
+export const checkOtherClient = (id: number) =>
+  `/users/${id}/another/contracts`;
+export const ActivateVerifyPhone = () => `/users/activate/otp/send`;
+export const SendUserNotifications = () => `/notifications/create-many`;
+export const GetUserNotifications = `/notifications/fetch`;
+export const GetUserNotificationsBadgeCount = `/notifications/not-seen`;
+export const MarkAllNotificationsRead = `/notifications/set-seen`;
+export const ActivateUser = () => `/users/activate`;
+export const IncreaseLimit = () => `/instant-approvals/increase-limit`;
+export const getRequestTracking = () => `/users/request-tracking`;
+export const checkUserLanguage = '/users/change-user-language';
+export const earlyPayment = '/contracts/early-payment/calculate';
+export const getCashbackMerchants = '/cashback/merchants';
+export const cashbackHistory = `/cashback/history`;
+export const redeemCashbackVoucher = `/cashback/voucher/redeem`;
+export const testMessage = 'sms';
+export const digitalFatortyTransfer = '/fatorty/digital/transfer';

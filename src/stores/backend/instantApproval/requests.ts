@@ -1,0 +1,13 @@
+export const phoneCheckURL = '/auth/phoneCheck';
+// export const checkClientURL = '/auth/checkClient';
+// export const checkClientURL = '/auth/checkClientWithPhone';
+export const checkClientURL = '/instant-approvals/check-client';
+// export const calcCreditURL = "/auth/calculateCredit";
+export const calcCreditURL = '/instant-approvals/submit';
+// export const calcCreditURL = '/instant-approvals/updated-submit';
+export const saveErrorsURL = '/instant-approvals/save-errors';
+export const collectContactsAndLogs = '/user-contacts';
+export const checkReferralCode = '/instant-approvals/check-promo-code';
+export const checkHybridValidate = '/instant-approvals/hybrid/validate';
+export const checkHybridStatus = '/instant-approvals/hybrid/status';
+export const checkHybridApply = '/instant-approvals/hybrid/apply';
