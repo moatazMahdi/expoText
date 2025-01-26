@@ -17,24 +17,24 @@ import {
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {
-  ConnectionsProvider,
-  StoresProvider,
-  ProviderBridge,
-  LocalizationProvider,
-} from 'components';
+// import {
+//   ConnectionsProvider,
+//   StoresProvider,
+//   ProviderBridge,
+//   LocalizationProvider,
+// } from 'components';
 import analytics from '@react-native-firebase/analytics';
 import dynamicLinks from '@react-native-firebase/dynamic-links';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {NotificationNavigation} from 'rnfn/firebase-notifications';
-import {useLocalization, useRootNavigationUtils, useStores} from 'hooks';
+// import {NotificationNavigation} from 'rnfn/firebase-notifications';
+// import {useLocalization, useRootNavigationUtils, useStores} from 'hooks';
 import {ROUTES} from '../routes';
 import LoginAlertModal from '../../components/LoginAlertModal';
 import {ApplicationAnalytics} from '../../utils/firebaseUtils';
-import SessionExpiredModal from 'src/components/SessionExpiredModal';
-import {useNetInfo} from '@react-native-community/netinfo';
-import NoInternetConnection from 'src/components/NoInternetConnection';
-import { AppOnboarding } from 'screens';
+// import SessionExpiredModal from 'src/components/SessionExpiredModal';
+import { ConnectionsProvider, LocalizationProvider, ProviderBridge } from '@/src/components';
+import { useLocalization, useStores } from '@/src/hooks';
+import SessionExpiredModal from '@/src/components/SessionExpiredModal';
 const spacing = (Dimensions.get('window').height * 10) / 812;
 var styles = StyleSheet.create({
   WhatsApp: {
@@ -109,13 +109,13 @@ export interface NotificationNavigationWithNavigatorProps {
   rootNavigator: React.MutableRefObject<NavigationContainerRef | null>;
 }
 
-const NotificationNavigationWithNavigator: React.FC<
-  NotificationNavigationWithNavigatorProps
-> = props => {
-  const {rootNavigator} = props;
-  const {navigateTo} = useRootNavigationUtils(rootNavigator);
-  return <NotificationNavigation navigateTo={navigateTo} />;
-};
+// const NotificationNavigationWithNavigator: React.FC<
+//   NotificationNavigationWithNavigatorProps
+// > = props => {
+//   const {rootNavigator} = props;
+//   const {navigateTo} = useRootNavigationUtils(rootNavigator);
+//   return <NotificationNavigation navigateTo={navigateTo} />;
+// };
 
 export const AppNavigationContainer: React.FC<{
   routingInstrumentation: any;
@@ -126,7 +126,7 @@ export const AppNavigationContainer: React.FC<{
   const rootNavigator = useRef<NavigationContainerRef | null>(null);
   const [dynamicLinkFound, setDynamicLinkFound] = useState('');
 
-  const netInfo = useNetInfo();
+  // const netInfo = useNetInfo();
   const [isConnected, setIsConnected] = useState<boolean>(true);
 
   // useEffect(() => {

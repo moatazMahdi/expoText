@@ -9,6 +9,7 @@ import {Text, LogBox, StatusBar} from 'react-native';
 // import {Settings as FBSettings} from 'react-native-fbsdk-next';
 import {Platform} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import { AppNavigationContainer } from '../navigation';
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 // import Config from 'react-native-config';
 // import JailMonkey from 'jail-monkey';
@@ -163,9 +164,9 @@ const App: React.FC = () => {
           barStyle={Platform.OS == 'android' ? 'light-content' : 'dark-content'}
         />
         <Text>test</Text>
-        {/* <AppNavigationContainer
-          routingInstrumentation={routingInstrumentation}
-        /> */}
+        <AppNavigationContainer
+          routingInstrumentation={"home"}
+        />
         {/* <UpdatingProgressBar /> */}
       </SafeAreaProvider>
     );

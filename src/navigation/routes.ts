@@ -98,7 +98,7 @@ import {
   BlueNovemberViewAll,
   CheckUpdate,
   AppOnboarding
-} from 'screens';
+} from '@/src/screens';
 
 export const ROUTES = {
   // splash: SplashScreen,
